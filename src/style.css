@@ -1,0 +1,199 @@
+/* style.css - Simulates global design system utility classes */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Basic font and color classes */
+.at-font {
+  font-family: sans-serif;
+}
+.at-font__headline3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.at-font__text-button--sm {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.at-font__subtitle {
+  font-size: 0.95rem;
+  color: #555;
+}
+.at-color--tint-ocean-90 {
+  color: #007bff; /* Example blue */
+}
+
+/* Layout and spacing utilities (Tailwind-like) */
+.at-css-grid {
+  display: grid;
+}
+.at-css-grid-layout {
+  display: contents;
+}
+.at-col-span-100 {
+  grid-column: span 100 / span 100;
+}
+.at-d-flex {
+  display: flex;
+}
+.at-d-none {
+  display: none !important;
+} /* Important for direct hide/show */
+.at-justify-content-center {
+  justify-content: center;
+}
+.at-align-items-center {
+  align-items: center;
+}
+.at-align-items-start {
+  align-items: flex-start;
+}
+.at-align-items-end {
+  align-items: flex-end;
+}
+.at-flex-column {
+  flex-direction: column;
+}
+.at-flex-grow-1 {
+  flex-grow: 1;
+}
+.at-flex-shrink-0 {
+  flex-shrink: 0;
+}
+.at-w-100 {
+  width: 100%;
+}
+.at-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.at-position-absolute {
+  position: absolute;
+}
+.at-m-0 {
+  margin: 0;
+}
+.at-mt-0 {
+  margin-top: 0;
+}
+.at-mb-4 {
+  margin-bottom: 1rem;
+}
+.at-mb-5 {
+  margin-bottom: 1.25rem;
+}
+.at-mt-1 {
+  margin-top: 0.25rem;
+}
+.at-mt-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.at-my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.at-ms-1 {
+  margin-inline-start: 0.25rem;
+}
+.at-ms-4 {
+  margin-inline-start: 1rem;
+}
+.at-ps-5 {
+  padding-inline-start: 1.25rem;
+}
+.at-pe-6 {
+  padding-inline-end: 1.5rem;
+}
+.at-pt-5 {
+  padding-top: 1.25rem;
+}
+.at-pt-6 {
+  padding-top: 1.5rem;
+}
+.at-pb-4 {
+  padding-bottom: 1rem;
+}
+.at-pb-6 {
+  padding-bottom: 1.5rem;
+}
+.at-px-4 {
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+}
+.at-align-text-left {
+  text-align: left;
+}
+
+/* Border and background classes */
+.at-border-bottom {
+  border-bottom: 1px solid #ccc;
+}
+.at-border-top {
+  border-top: 1px solid #ccc;
+}
+.at-border-left--none {
+  border-left: none;
+}
+.at-border-right--none {
+  border-right: none;
+}
+.at-border-radius--none {
+  border-radius: 0;
+}
+
+/* Buttons for show/hide all */
+.at-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.at-btn--tertiary {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid transparent;
+}
+
+.at-btn--tertiary:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Original accordion classes (some may be overridden by Shadow DOM, but useful as references) */
+.at-universal-accordion {
+  cursor: default;
+}
+.at-universal-accordion__header.focus-visible:focus {
+  position: relative;
+  z-index: 1;
+}
+
+/* Global definitions for custom properties if used by Lit components */
+:root {
+  --at-accordion-border-color: #eee;
+  --at-accordion-hover-bg: #eee;
+  --at-focus-ring-color: #007bff;
+  --at-color-white: #ffffff;
+  --at-color-tint-shore-10: #13538a; 
+}
+
+.at-background-color--white {
+  background-color: var(--at-color-white);
+}
+
+.at-background-color--tint-shore-10 {
+  background-color: var(--at-color-tint-shore-10);
+}
